@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: 'Montaga', serif;
+}
+
 body {
   background-color: #FCF9F7;
 }
