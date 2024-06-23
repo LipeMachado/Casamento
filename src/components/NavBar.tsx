@@ -32,8 +32,13 @@ const navbarSecondList = [
 export function NavBar() {
     return (
         <>
-            <nav className="h-36 mb-16 flex justify-center items-center">
-                <ul className="flex w-full gap-20 justify-center items-center text-[#2B1105] text-xl">
+            <div className="">
+                <div>
+                    hamburguer
+                </div>
+            </div>
+            <nav className="h-36 mb-8 flex justify-center items-center">
+                <ul className="hidden lg:flex-row lg:flex w-full gap-14 justify-center items-center text-[#2B1105] text-lg">
                     {navbarFirstList.map((item) => (
                         <a
                             key={item.menu}
@@ -56,6 +61,11 @@ export function NavBar() {
                         </a>
                     ))}
                 </ul>
+                <div className="flex lg:hidden">
+                    <div className="w-24 h-24 flex justify-center items-center border-[1px] border-black rounded-full select-none">
+                        <p className="font-light text-4xl">F&K</p>
+                    </div>
+                </div>
             </nav>
         </>
     )
