@@ -11,7 +11,7 @@ export default function Home() {
         <p>Jan 12, 2024 - Ranch Life</p>
       </section>
       <div className="flex justify-center my-20 mx-10">
-        <Image className="rounded-xl md:rounded-2xl" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
+        <Image className="rounded-xl md:rounded-2xl shadow-lg shadow-gray-600" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
       </div>
       <section className="w-full bg-[#D7C6F1] py-10 flex flex-col justify-center items-center gap-5">
         <h4 className="text-2xl text-black font-semibold">Contagem Regressiva</h4>
