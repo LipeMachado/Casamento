@@ -1,7 +1,10 @@
+import CountdownTimer from "@/components/CountdownTimer";
 import { NavBar } from "@/components/NavBar";
 import Image from "next/image";
 
 export default function Home() {
+  const targetDate = new Date('2025-01-11T23:59:59');
+
   return (
     <div>
       <NavBar />
@@ -14,21 +17,13 @@ export default function Home() {
         <Image className="rounded-xl md:rounded-2xl shadow-lg shadow-gray-600" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
       </div>
       <section className="w-full bg-[#D7C6F1] py-10 flex flex-col justify-center items-center gap-5">
-        <h4 className="text-2xl text-black font-semibold">Contagem Regressiva</h4>
+        <h4 className="text-2xl text-black font-semibold font-sans">Contagem Regressiva</h4>
         <div className="flex gap-5">
-          <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl">
-
-          </div>
-          <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl">
-
-          </div>
-          <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl">
-
-          </div>
+          <CountdownTimer targetDate={targetDate} />
         </div>
       </section>
       <section className="my-20">
-        <p className="px-10 sm:px-36 text-center">
+        <p className="px-10 sm:px-36 text-center text-lg">
           Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento.
           Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
           Aqui vocês encontrarão também dicas para hospedagem, salão de beleza, trajes, estacionamento, etc.
