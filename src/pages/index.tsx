@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex justify-center my-20 mx-10">
         <Image className="rounded-xl md:rounded-2xl shadow-lg shadow-gray-600" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
       </div>
-      <section className="w-full bg-[#D7C6F1] py-10 flex flex-col justify-center items-center gap-5">
+      <section className="w-full py-10 flex flex-col justify-center items-center gap-5">
         <h4 className="text-2xl text-black font-semibold font-sans">Contagem Regressiva</h4>
         <div className="flex gap-5">
           <CountdownTimer targetDate={targetDate} />

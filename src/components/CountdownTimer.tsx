@@ -34,15 +34,15 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
     return (
         <div className="flex gap-5 font-sans">
-            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl flex flex-col items-center justify-center">
+            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-[#D7C6F1] text-[#6a469e] rounded-2xl flex flex-col items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold">{days}</span>
                 <span className="text-sm">dias</span>
             </div>
-            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl flex flex-col items-center justify-center">
+            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-[#D7C6F1] text-[#6a469e] rounded-2xl flex flex-col items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold">{hours}</span>
                 <span className="text-sm">horas</span>
             </div>
-            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-white rounded-2xl flex flex-col items-center justify-center">
+            <div className="w-20 sm:w-28 h-20 sm:h-28 bg-[#D7C6F1] text-[#6a469e] rounded-2xl flex flex-col items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold">{minutes}</span>
                 <span className="text-sm">minutos</span>
             </div>
