@@ -8,4 +8,20 @@ html {
 
 body {
   background-color: #f1edf7;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1edf7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6a469e;
+  border-radius: 20px;
+  border: 3px solid #f1edf7;
 }

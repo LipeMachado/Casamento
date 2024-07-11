@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 
 const navbarFirstList = [
@@ -49,32 +49,50 @@ export function NavBar() {
     return (
         <>
             <nav className="h-full lg:h-36 mb-8 flex justify-evenly lg:justify-center items-center">
-                <ul className="hidden lg:flex-row lg:flex w-full gap-14 justify-center items-center text-[#2B1105] text-lg">
+                <ul className="hidden lg:flex-row lg:flex w-full gap-14 justify-center items-center text-[#2B1105] text-lg pr-0 lg:pr-[20px]">
                     {navbarFirstList.map((item) => (
-                        <a
+                        <motion.a
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2, delay: 0.35 }}
                             key={item.menu}
                             className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors"
                             href={item.link}
                         >
                             {item.menu}
-                        </a>
+                        </motion.a>
                     ))}
-                    <div className="w-24 h-24 flex justify-center items-center border-[1px] border-black rounded-full select-none">
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3, delay: 0.3 }}
+                        className="w-24 h-24 flex justify-center items-center border-[1px] border-black rounded-full select-none"
+                    >
                         <p className="font-light text-4xl">F&K</p>
-                    </div>
+                    </motion.div>
                     {navbarSecondList.map((item) => (
-                        <a
+                        <motion.a
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2, delay: 0.35 }}
                             key={item.menu}
                             className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors"
                             href={item.link}
                         >
                             {item.menu}
-                        </a>
+                        </motion.a>
                     ))}
                 </ul>
-                <div className="w-full flex justify-between md:justify-evenly items-center lg:hidden py-5 px-5">
+                <div className="w-full flex justify-between md:justify-evenly items-center lg:hidden pt-5 px-5">
                     <div className="flex justify-start items-start h-full">
-                        <button
+                        <motion.button
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2, delay: 0.35 }}
                             className="lg:hidden"
                             onClick={toggleMenu}
                             aria-label={menuOpen ? "Fechar Menu" : "Abrir Menu"}
@@ -139,13 +157,19 @@ export function NavBar() {
                                     </div>
                                 </>
                             )}
-                        </button>
+                        </motion.button>
                     </div>
-                    <div className="flex lg:hidden">
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3, delay: 0.3 }}
+                        className="flex lg:hidden"
+                    >
                         <div className="w-24 h-24 flex justify-center items-center border-[1px] border-black rounded-full select-none">
                             <p className="font-light text-4xl">K&F</p>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className="w-[48px] h-[48px]"></div>
                 </div>
             </nav>

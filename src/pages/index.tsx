@@ -1,7 +1,8 @@
+import { Carousel } from "@/components/Carousel";
 import CountdownTimer from "@/components/CountdownTimer";
+import { Header } from "@/components/Header";
 import { Loading } from "@/components/Loading";
 import { NavBar } from "@/components/NavBar";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -26,18 +27,8 @@ export default function Home() {
       ) : (
         <>
           <NavBar />
-          <section className="w-full text-center flex flex-col gap-4">
-            <p className="text-base text-brand-primary">Junte-se a nós para comemorar</p>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl">Karen & Felipe</h1>
-            <p>Jan 12, 2025 às 16h</p>
-            <p>
-              <b>Ranch Life</b> <br />
-              Estrada Do Tipiti - Ita Park, Itapecerica da Serra - SP, 06855-100
-            </p>
-          </section>
-          <div className="flex justify-center my-10 sm:my-20 mx-5 sm:mx-10">
-            <Image className="rounded-xl md:rounded-2xl shadow-lg shadow-gray-600" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
-          </div>
+          <Header />
+          <Carousel />
           <section className="w-full pb-10 flex flex-col justify-center items-center gap-5">
             <h4 className="text-2xl text-black font-semibold font-sans">Contagem Regressiva</h4>
             <div className="flex gap-5">

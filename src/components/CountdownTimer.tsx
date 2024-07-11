@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 interface CountdownTimerProps {
@@ -33,7 +34,9 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     const { days = 0, hours = 0, minutes = 0 } = timeLeft;
 
     return (
-        <div className="flex gap-5 font-sans">
+        <motion.div
+            className="flex gap-5 font-sans"
+        >
             <div className="w-20 sm:w-28 h-20 sm:h-28 bg-[#D7C6F1] text-[#6a469e] rounded-2xl flex flex-col items-center justify-center">
                 <span className="text-2xl sm:text-4xl font-bold">{days}</span>
                 <span className="text-sm">dias</span>
@@ -46,7 +49,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
                 <span className="text-2xl sm:text-4xl font-bold">{minutes}</span>
                 <span className="text-sm">minutos</span>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
