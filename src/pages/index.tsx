@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
       <section className="w-full text-center flex flex-col gap-4">
         <p className="text-base text-brand-primary">Junte-se a nós para comemorar</p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl">Felipe & Karen</h1>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl">Karen & Felipe</h1>
         <p>Jan 12, 2024 - Ranch Life</p>
       </section>
       <div className="flex justify-center my-20 mx-10">
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
       <section className="my-20">
-        <p className="px-10 sm:px-36 text-center text-lg">
+        <p className="px-5 sm:px-10 md:px-36 text-center text-lg">
           Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento.
           Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
           Aqui vocês encontrarão também dicas para hospedagem, salão de beleza, trajes, estacionamento, etc.
