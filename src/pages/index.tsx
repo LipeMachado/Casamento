@@ -11,7 +11,7 @@ export default function Home() {
       <section className="w-full text-center flex flex-col gap-4">
         <p className="text-base text-brand-primary">Junte-se a nós para comemorar</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl">Karen & Felipe</h1>
-        <p>Jan 12, 2024 - Ranch Life</p>
+        <p>Jan 12, 2025 - Ranch Life</p>
       </section>
       <div className="flex justify-center my-20 mx-10">
         <Image className="rounded-xl md:rounded-2xl shadow-lg shadow-gray-600" width={1000} height={0} src="/bannerInicial.jpg" alt="" />
