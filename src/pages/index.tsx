@@ -42,7 +42,13 @@ export default function Home() {
               <CountdownTimer targetDate={targetDate} />
             </div>
           </motion.section>
-          <section className="my-20">
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="my-20"
+          >
             <p className="px-5 sm:px-10 md:px-36 text-center text-lg">
               Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento.
               Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
@@ -52,7 +58,7 @@ export default function Home() {
               Para nos presentear, escolha qualquer item da Lista de Casamento, seja um item de algum dos sites, lojas físicas,
               ou então vocês podem utilizar a opção de cotas. Fiquem à vontade! Aguardamos vocês no nosso grande dia!
             </p>
-          </section>
+          </motion.section>
         </>
       )}
     </>
