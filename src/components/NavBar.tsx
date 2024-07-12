@@ -122,7 +122,7 @@ export function NavBar() {
                                                         delay: 0.1 + idx / 10,
                                                     }}
                                                     key={item.menu}
-                                                    className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors my-4"
+                                                    className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors my-4 text-xl"
                                                     href={item.link}
                                                     onClick={toggleMenu}
                                                 >
@@ -140,7 +140,7 @@ export function NavBar() {
                                                         delay: 0.1 + idx / 10,
                                                     }}
                                                     key={item.menu}
-                                                    className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors my-4"
+                                                    className="text-[#2B1105] hover:text-[#2B1105]/70 transition-colors my-4 text-xl"
                                                     href={item.link}
                                                     onClick={toggleMenu}
                                                 >

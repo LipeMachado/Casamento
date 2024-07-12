@@ -3,6 +3,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 import { Header } from "@/components/Header";
 import { Loading } from "@/components/Loading";
 import { NavBar } from "@/components/NavBar";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -29,12 +30,18 @@ export default function Home() {
           <NavBar />
           <Header />
           <Carousel />
-          <section className="w-full pb-10 flex flex-col justify-center items-center gap-5">
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="w-full pb-10 flex flex-col justify-center items-center gap-5"
+          >
             <h4 className="text-2xl text-black font-semibold font-sans">Contagem Regressiva</h4>
             <div className="flex gap-5">
               <CountdownTimer targetDate={targetDate} />
             </div>
-          </section>
+          </motion.section>
           <section className="my-20">
             <p className="px-5 sm:px-10 md:px-36 text-center text-lg">
               Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento.
