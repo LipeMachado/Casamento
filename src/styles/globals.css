@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Montaga', serif;
+  font-family: "Montaga", sans-serif;
 }
 
 body {
   background-color: #f1edf7;
+  color: #404951;
   user-select: none;
   scroll-behavior: smooth;
 }

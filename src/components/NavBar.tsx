@@ -70,7 +70,7 @@ export function NavBar() {
                         transition={{ duration: 0.3, delay: 0.3 }}
                         className="w-24 h-24 flex justify-center items-center border-[1px] border-black rounded-full select-none"
                     >
-                        <p className="font-light text-4xl">F&K</p>
+                        <p className="font-light text-4xl">K&F</p>
                     </motion.div>
                     {navbarSecondList.map((item) => (
                         <motion.a
